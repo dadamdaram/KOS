@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InputTag</title>
+  </head>
+  <body>
+    <form method="get" action="test.html"> 
+    <input type="text" placeholder="입력  Let's go" name="input1" maxlength="10" />
+    <input type="password" name="my_pw" maxlength="5" />
+    <p></p>
+    * 평소에 선호하는 언어 종류를 고르시오.
+    <p>
+      <input type="checkbox" name="lang1" value="C++" />C++
+      <input
+        type="checkbox"
+        name="lang2"
+        value="python"
+      />python
+      <input
+        type="checkbox"   
+        name="lang4"
+        maxlength="C"
+      />C
+      <input
+        type="checkbox"
+        name="lang4"
+        maxlength="Java"
+      />Java
+
+      * 현재 당신의 PC를 포맷하시겠습니까? <p>
+        <input type="radio" name="format" value="yes"> yes
+        <input type="radio" name="format" value="no"> No
+<p></p>
+        <input type="submit" value="제출">
+        <button type="reset"> Reset </button>
+      </p>
+    </p>
+    <input type="image" src="img/image.png" alt="제출" width="30px">
+    <select value="lang" name="lang">
+        <option value="python" >python</option>
+        <option value="java" selected> java</option>
+        <option value="c">c</option>
+        <option value="cpp">C++</option>
+    </select>
+    <p></p>
+    <input type="file" name="my_file">
+
+    <!-- 선택 파일명 표시 제출 시, 서버로 전달 (현재 (1) 서버 X (2) action에 처리 X (3) 기타 설정.. X -> 현재 수준 = 프론트 단 처리만 ㅇㅇ ) -->
+
+</form>
+
+  </body>
+</html>
+<!-- form method - get 방식 = 서버에 표시, URL(링크)에 노출 ㅜ.ㅜ (90년대 말 방식..), 상용서비스 = post 방식!!-->
